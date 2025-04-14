@@ -1,0 +1,166 @@
+.navbar {
+    background-color: #212529;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: rgb(217, 0, 0);
+    font-size: 24px;
+    transition: 0.3 color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d90000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: rgb(217, 0, 0);
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: rgb(217, 0, 0);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 990px) {
+    #offcanvasNavbar {
+        background-color: #212529;
+    }
+
+    #offcanvasNavbar .offcanvas-body {
+        background-color: inherit;
+    }
+
+    #offcanvasNavbar .nav-link {
+        color: rgb(255, 255, 255);
+    }
+
+    #offcanvasNavbar .nav-link:hover,
+    #offcanvasNavbar .nav-link:active {
+        color: rgb(217, 0, 0);
+    }
+}
+
+.offcanvas-title {
+    color: #fff;
+}
+
+.btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.146a.5.5 0 0 1 .708 0L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.hero-section-index {
+    background: url(assets/indexPic.png);
+}
+
+.hero-section-quiz1 {
+    background: url(assets/quiz1Pic.jpg);
+}
+
+.hero-section-quiz2 {
+    background: url(assets/quiz2Pic.jpg);
+}
+
+.hero-section-quiz3 {
+    background: url(assets/quiz3Pic.jpg);
+}
+
+.hero-section-quiz4 {
+    background: url(assets/quiz4Pic.jpg);
+}
+
+.hero-section-quiz5 {
+    background: url(assets/quiz5Pic.jpg);
+}
+
+.hero-section-rev1 {
+    background: url(assets/rev1Pic.jpg);
+}
+
+.hero-section-rev2 {
+    background: url(assets/rev2Pic.jpg);
+}
+
+.hero-section-proyecto1 {
+    background: url(assets/proyecto1Pic.jpg);
+}
+
+.hero-section-proyecto2 {
+    background: url(assets/proyecto2Pic.jpeg);
+}
+
+.hero-section-proyecto3 {
+    background: url(assets/proyecto3Pic.jpg);
+}
+
+.hero-section-proyecto4 {
+    background: url(assets/proyecto4Pic.jpg);
+}
+
+.hero-section-proyecto5 {
+    background: url(assets/proyecto5Pic.jpg);
+}
+
+.hero-section {
+    /* background: url(assets/indexPic.png) no-repeat center center; */
+     background-size: cover;
+    width: 100%;
+}
+
+.hero-section::before{
+    background-color: rgb(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    padding-top: 60px;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.table td, .table th {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    white-space: nowrap;
+}
