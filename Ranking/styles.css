@@ -138,8 +138,9 @@
 
 .hero-section {
     /* background: url(assets/indexPic.png) no-repeat center center; */
-     background-size: cover;
+    background-size: cover;
     width: 100%;
+    position: relative;
 }
 
 .hero-section::before{
@@ -154,7 +155,9 @@
 
 .hero-section .container {
     padding-top: 60px;
-    height: 100vh;
+    padding-bottom: 10px;
+    height: auto;
+    min-height: 100vh;
     z-index: 1;
     position: relative;
 }
