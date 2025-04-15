@@ -167,3 +167,15 @@
     padding: 0.4rem;
     white-space: nowrap;
 }
+
+a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(217, 0, 0);
+}
