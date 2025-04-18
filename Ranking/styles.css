@@ -8,9 +8,18 @@
 
 .navbar-brand {
     font-weight: 500;
-    color: rgb(217, 0, 0);
+    color: #ffffff;
     font-size: 24px;
     transition: 0.3 color;
+}
+
+.navbar-brand:hover {
+    color: rgb(217, 0, 0);
+}
+
+.navbar-brand.active {
+    font-weight: bold;
+    color:  rgb(217, 0, 0) !important;
 }
 
 .navbar-toggler {
@@ -33,7 +42,12 @@
     position: relative;
 }
 
-.nav-link:hover, .nav-link:active {
+.nav-link.active {
+    font-weight: bold;
+    color:  rgb(217, 0, 0) !important;
+}
+
+.nav-link:hover{
     color: rgb(217, 0, 0);
 }
 
@@ -86,6 +100,10 @@
 
 .hero-section-index {
     background: url(assets/indexPic.png);
+}
+
+.hero-section-infoExtra {
+    background: url(assets/infoExtraPic.jpg);
 }
 
 .hero-section-quiz1 {
@@ -178,4 +196,9 @@ a {
 
 a:hover {
     color: rgb(217, 0, 0);
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: #fff;
 }
