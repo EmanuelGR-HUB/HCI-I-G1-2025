@@ -186,6 +186,21 @@
     white-space: nowrap;
 }
 
+.table-danger td, .table-danger th {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #fff;
+}
+
+.table-warning td, .table-warning th {
+    background-color: rgba(255, 197, 7, 0.2);
+    color: #fff;
+}
+
+.table-success td, .table-success th {
+    background-color: rgba(25, 135, 84, 0.2);
+    color: #fff;
+}
+
 a {
     display: block;
     width: fit-content;
